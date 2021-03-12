@@ -11,7 +11,7 @@ All the dependencies and required libraries are included in the file [requiremen
 ## Installation:
 1. clone the repo
 ```
-$ git clone https://github.com/Gaya3priya/face_attendance.git
+$ git clone https://github.com/Prasan26/FACE-ATTENDANCE-SYSTEM.git
 ```
 2.Change your directory to the cloned repo and create a Python virtual environment named 'testenv'
 ```
@@ -30,12 +30,12 @@ $ pip3 install -r requirements.txt
 
 ### - Gathering Selfies:
 
-System will capture image of the user through webcam.Once face of the user is shown up in webcam, then we will detect the face in the webcam by using haarcascade_frontalface_default.xml.Once face is detected we will capture each frame of user face in different scale and angle like which is in the [gather_selfies.py](https://github.com/Gaya3priya/face_attendance/blob/master/capturefaces.py) file.
-These frames will be encoded in text format and saving them with employeeID.txt by asking user/employee to enter his/her ID and will be saved in [output/faces](https://github.com/Gaya3priya/face_attendance/tree/master/output/captured_faces) folder in our system for future use.
+System will capture image of the user through webcam.Once face of the user is shown up in webcam, then we will detect the face in the webcam by using haarcascade_frontalface_default.xml.Once face is detected we will capture each frame of user face in different scale and angle like which is in the [gather_selfies.py](https://github.com/Prasan26/FACE-ATTENDANCE-SYSTEM/blob/687ef318da8e8c28a8924b60bf667f5dc587a290/FACE-ATTENDANCE-SYSTEM-master/FAS-UI-NEW%20-%20Latest/attendence_system/gather_selfies.py) file.
+These frames will be encoded in text format and saving them with employeeID.txt by asking user/employee to enter his/her ID and will be saved in [output/faces](https://github.com/Prasan26/FACE-ATTENDANCE-SYSTEM/blob/687ef318da8e8c28a8924b60bf667f5dc587a290/FACE-ATTENDANCE-SYSTEM-master/FAS-UI-NEW%20-%20Latest/attendence_system/output/faces/221628.txt) folder in our system for future use.
 
 ### - Detection:
 
-The [facedetector.py](https://github.com/Gaya3priya/face_attendance/blob/master/facealgorithms/facedetectrecognize/facedetection.py) file will detect faces in the image by using haarcascade_frontalface_default.xml and OpenCV.And return the bounding boxes around the faces in the image.The [facedetector.py](https://github.com/Gaya3priya/face_attendance/blob/master/facealgorithms/facedetectrecognize/facedetector.py) file will be like liveness detection.It can detect faces without detecting fake faces.
+The [facedetector.py](https://github.com/Prasan26/FACE-ATTENDANCE-SYSTEM/blob/687ef318da8e8c28a8924b60bf667f5dc587a290/FACE-ATTENDANCE-SYSTEM-master/FAS-UI-NEW%20-%20Latest/attendence_system/facedetector.py) file will detect faces in the image by using haarcascade_frontalface_default.xml and OpenCV.And return the bounding boxes around the faces in the image.The [facedetector.py](https://github.com/Prasan26/FACE-ATTENDANCE-SYSTEM/blob/687ef318da8e8c28a8924b60bf667f5dc587a290/FACE-ATTENDANCE-SYSTEM-master/FAS-UI-NEW%20-%20Latest/attendence_system/facedetector.py) file will be like liveness detection.It can detect faces without detecting fake faces.
 
 ### - Recognition:
 
